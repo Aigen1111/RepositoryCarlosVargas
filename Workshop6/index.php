@@ -1,12 +1,10 @@
 <?php
   session_start();
-  echo"Hola";
+  echo "Hola ".$_SESSION['user']['name'];
   $user = $_SESSION['user'];
   if (!$user) {
     header('Location: /index.php');
   }
-
-  echo $_SESSION['user'];
   ?>
   <!DOCTYPE html>
   <html lang="en">
