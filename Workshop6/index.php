@@ -1,6 +1,7 @@
 <?php
   session_start();
   echo "Hola ".$_SESSION['user']['name'];
+  echo'Cambios waaaa'.$_SESSION['user']['email'];
   $user = $_SESSION['user'];
   if (!$user) {
     header('Location: /index.php');
