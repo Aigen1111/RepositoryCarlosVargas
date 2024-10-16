@@ -1,6 +1,6 @@
 <?php
   session_start();
-echo"Hola ";
+  echo"Hola";
   $user = $_SESSION['user'];
   if (!$user) {
     header('Location: /index.php');
