@@ -5,6 +5,8 @@
   if (!$user) {
     header('Location: /index.php');
   }
+
+  echo $_SESSION['user'];
   ?>
   <!DOCTYPE html>
   <html lang="en">
