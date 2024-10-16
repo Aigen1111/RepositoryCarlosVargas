@@ -37,6 +37,16 @@
       <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Arboles</a>
     </li>
   </nav>
+  <nav class="nav">
+    <?php  if($user['role'] === 'Administrador') { ?>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Users</a>
+      </li>
+    <?php } ?>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Arboles</a>
+    </li>
+  </nav>
 
   </body>
   </html>
